@@ -33,13 +33,13 @@ const Card = ({place,price,image,alt,more,less}) => {
             <div className='bg-red-400 cursor-pointer text-[20px] text-center mx-16 my-4 p-2 border-[3px] border-solid border-red-600 rounded-md hover:bg-red-600' onClick={Notintrestedbutton}>Not Interested</div>
 
             </div>
-        </div>}
         {notintrested && (
             <div className='mx-auto mt-[20rem] h-[30px] w-fit'>
                 <p className='mb-3 text-2xl font-bold'>No Tours Left</p>
             <div className='bg-slate-500 p-2 text-center cursor-pointer hover:bg-slate-300' onClick={Refresh}>Refresh</div>
             </div>
         )}
+        </div>}
         </>
     )
 }
