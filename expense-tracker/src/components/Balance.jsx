@@ -14,11 +14,11 @@ const Balance = () => {
     <div className="flex justify-between">
       <div className="bg-green-100 p-4 rounded-lg w-1/2 mr-2 dark:bg-green-700">
         <h2 className="text-xl font-semibold text-green-700 dark:text-green-200 ">Income</h2>
-        <p className="text-lg text-green-800 dark:text-green-400">₹ {totalIncome.toFixed(2)}</p>
+        <p className="text-lg text-green-800 dark:text-green-400">+ ₹ {totalIncome.toFixed(2)}</p>
       </div>
       <div className="bg-red-100 p-4 rounded-lg w-1/2 ml-2 dark:bg-red-700">
         <h2 className="text-xl font-semibold text-red-700 dark:text-red-300">Expense</h2>
-        <p className="text-lg text-red-800 dark:text-red-400">₹ {Math.abs(totalExpense).toFixed(2)}</p>
+        <p className="text-lg text-red-800 dark:text-red-400">- ₹ {Math.abs(totalExpense).toFixed(2)}</p>
       </div>
     </div>
   </div>
