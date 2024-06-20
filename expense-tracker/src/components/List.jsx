@@ -12,7 +12,7 @@ const List = () => {
           <div key={expense.id} className="flex justify-between items-center mb-2 border-b border-gray-200 dark:border-gray-700 pb-2">
             <span className="text-gray-700 dark:text-gray-300">{expense.text}</span>
             <span className={`text-lg ${expense.amount > 0 ? 'text-green-500 dark:text-green-400' : 'text-red-500 dark:text-red-400'}`}>
-              ${expense.amount.toFixed(2)}
+            ₹{expense.amount.toFixed(2)}
             </span>
             <button onClick={() => removeExpense(index)} className="text-red-500 dark:text-red-400 hover:text-red-700 dark:hover:text-red-600 transition duration-300">
               Remove
