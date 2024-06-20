@@ -26,7 +26,7 @@ const App = () => {
       >
         {darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
       </button>
-      <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-6">Expense Tracker</h1>
+      <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-6">Transaction Tracker</h1>
       <Balance />
       <Input />
       <List />
